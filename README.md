@@ -4,6 +4,9 @@
 
 This project is a RESTful API for managing a bookstore inventory, built with FastAPI. It supports CRUD operations for books, authors, and genres.
 
+## Contributor
+Sai Deepak Reddy (Antino642)
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -60,6 +63,13 @@ This project is a RESTful API for managing a bookstore inventory, built with Fas
 
     ```bash
     uvicorn main:app --reload
+    ```
+
+8. **Access the API documentation:**
+
+    FastAPI automatically generates interactive API documentation with Swagger. To access it, run your FastAPI application and navigate to:
+    ```
+    http://127.0.0.1:8000/docs
     ```
 
 ## API Usage Examples
