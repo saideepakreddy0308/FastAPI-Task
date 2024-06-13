@@ -14,15 +14,13 @@ Base.metadata.create_all(bind=engine)
 def add_sample_data():
     db = SessionLocal()
 
-    # Create sample authors
-    author3 = Author(name="Author One", biography="Biography of Author One")
-    author4 = Author(name="Author Two", biography="Biography of Author Two")
+    author3 = Author(name="Author Three", biography="Biography of Author Three")
+    author4 = Author(name="Author Four", biography="Biography of Author Four")
 
     db.add(author3)
     db.add(author4)
     db.commit()
 
-    # Create sample genres
     genre3 = Genre(name="Fiction")
     genre4 = Genre(name="Non-Fiction")
 
@@ -30,7 +28,6 @@ def add_sample_data():
     db.add(genre4)
     db.commit()
 
-    # Create sample books
     book3 = Book(title="Book Three", author_id=author3.id, genre_id=genre3.id, publication_date=date(4043, 3, 3), price=39.99)
     book4 = Book(title="Book Four", author_id=author4.id, genre_id=genre4.id, publication_date=date(4043, 3, 4), price=49.99)
 

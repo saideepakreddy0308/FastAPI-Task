@@ -25,7 +25,6 @@ app.dependency_overrides[get_db] = override_get_db
 
 client = TestClient(app)
 
-# Utility function to create initial data
 def create_initial_data(db):
     db.add(Author(id=1, name="Author One", biography="Biography of Author One"))
     db.add(Genre(id=1, name="Fiction"))
